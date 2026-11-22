@@ -1,4 +1,3 @@
-md
 🎓 Digital ID Card Generator
 
 A simple and modern web application to generate student ID cards instantly with QR Code integration and download as PNG feature.
