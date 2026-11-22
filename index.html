@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Digital ID Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 Digital ID Card Generator</h1>
+
+  <!-- Input Form -->
+  <div class="form-container">
+    <input type="text" id="name" placeholder="Enter Full Name" oninput="updateID()">
+    <input type="text" id="roll" placeholder="Enter Roll Number" oninput="updateID()">
+    <input type="text" id="course" placeholder="Enter Course" oninput="updateID()">
+    <input type="text" id="photo" placeholder="Enter Photo URL" oninput="updateID()">
+    <button onclick="downloadCard()">Download ID Card</button>
+  </div>
+
+  <!-- ID Card -->
+  <div class="id-card" id="idCard">
+    <div class="header">STUDENT ID CARD</div>
+    <img id="cardPhoto" src="https://i.pravatar.cc/150" alt="Profile Photo">
+    <h2 id="cardName">Your Name</h2>
+    <p id="cardRoll">Roll No: XXXXX</p>
+    <p id="cardCourse">Course: ABC</p>
+    <div id="qrcode"></div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
